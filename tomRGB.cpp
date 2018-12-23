@@ -63,6 +63,52 @@ void tomRGB::writeRGB()
     }
 }
 
+void tomRGB::Spectrum(int speed)
+{
+    for (int decColour = 0; decColour < 3; decColour += 1)
+    {
+        int incColour = decColour == 2 ? 0 : decColour + 1;
+
+        for (int i = 0; i < 255; i += 1)
+        {
+            if (decColour == 0)
+            {
+                r--;
+            }
+            if (decColour == 1)
+            {
+                g--;
+            }
+            if (decColour == 2)
+            {
+                b--;
+            }
+            if (incColour == 0)
+            {
+                r++;
+            }
+            if (incColour == 1)
+            {
+                g++;
+            }
+            if (incColour == 2)
+            {
+                b++;
+            }
+
+            writeRGB();
+            if (speed >= 0 && speed <= 100)
+            {
+                delay(105 - speed);
+            }
+            else
+            {
+                delay(50);
+            }
+        }
+    }
+}
+
 void tomRGB::Color(LED_COLOR _color)
 {
     if (_color == RED)

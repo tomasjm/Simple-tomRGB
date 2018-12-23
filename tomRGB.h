@@ -35,4 +35,5 @@ public:
   void ledOn();
   void ledOff();
   void writeRGB();
+  void Spectrum(int speed);
 };
