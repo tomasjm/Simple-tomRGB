@@ -18,7 +18,7 @@ git clone https://github.com/tomasjm/Simple-tomRGB
 
 ![Example](https://github.com/tomasjm/Simple-tomRGB/blob/master/guide/guide_1.png?raw=true)
 
-3- Go and run the example code that is below in "How to use" section, if you see green-red-purple cycle finishing into a spectrum cycle, there is all ok!
+3- Go and run the example code that is below in "How to use" section, if you see green-red-purple cycle there is all ok!
 
 
 ### Precaution
@@ -76,8 +76,8 @@ void loop() {
         - ORANGE
     */
    // the final one is the spectrum color that can be applied by using Spectrum(speed) function, and speed is a integer from 1 to 100.
-   led.Spectrum(100);
-   delay(10000);
+   //led.Spectrum(100);
+   // but I recommend to use without the another functions, there is a spectrum example in examples folder.
 }
 ````
 
