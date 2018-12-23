@@ -34,4 +34,5 @@ public:
   void Color(LED_COLOR _color);
   void ledOn();
   void ledOff();
+  void writeRGB();
 };

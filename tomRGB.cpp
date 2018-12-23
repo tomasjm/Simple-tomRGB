@@ -47,6 +47,22 @@ void tomRGB::ledOff()
     }
 }
 
+void tomRGB::writeRGB()
+{
+    if (type == COMMON_CATHODE)
+    {
+        analogWrite(rPin, 255 - r);
+        analogWrite(gPin, 255 - g);
+        analogWrite(bPin, 255 - b);
+    }
+    else
+    {
+        analogWrite(rPin, r);
+        analogWrite(gPin, g);
+        analogWrite(bPin, b);
+    }
+}
+
 void tomRGB::Color(LED_COLOR _color)
 {
     if (_color == RED)
@@ -97,4 +113,5 @@ void tomRGB::Color(LED_COLOR _color)
         g = 75;
         b = 0;
     }
+    writeRGB();
 }
