@@ -14,7 +14,7 @@ This library was tested only with Arduino Uno.
 
 It's super simple! You only need to inicializate a led entity with the class of tomRGB.
 
-```
+````C++
 #include "tomRGB.h"
  // Class tomRGB needs 4 parameters
  // First one is to setup the type of led that you are using(cathode or anode).
@@ -41,7 +41,7 @@ void loop() {
     // There are many colors defined by default that can be applied by using Color(color) function.
     // For example: Color(RED); Color(GREEN); Color(YELLOW);
 }
-```
+`````
 
 And repeat
 
