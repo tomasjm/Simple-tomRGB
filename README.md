@@ -16,9 +16,9 @@ git clone https://github.com/tomasjm/Simple-tomRGB
 
 2- Put this library into libraries folder of Arduino, commonly it is found in documents folder.
 
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![Example](https://github.com/tomasjm/Simple-tomRGB/blob/master/guide/guide_1.png?raw=true)
 
-3- Go and run the example code that is below in "How to use" section.
+3- Go and run the example code that is below in "How to use" section, if you see green-red-purple cycle there is all ok!
 
 
 ### Precaution
