@@ -85,6 +85,3 @@ void loop() {
 
 * **Tomás Jiménez** - *Student of Electronic Engineering* - [tomasjm](https://github.com/tomasjm)
 
-## License
-
-Feel free to do anything using this code... (This is in a way too simple to put license into it haha)
